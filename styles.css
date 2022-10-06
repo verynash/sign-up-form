@@ -1,0 +1,112 @@
+:root {
+    --text: rgb(185, 185, 185);
+    --color: rgba(67, 82, 95);
+    --shadow: rgb(185, 185, 185, .7);
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/mountains.avif);
+    width: 40%;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    margin: 0;
+    height: 10%;
+    margin-top: 30vh;
+    background: var(--shadow);
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+    font-size: 2.5rem;
+}
+
+.source {
+    margin-top: auto;
+    text-align: center;
+    color: var(--text);
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+.right {
+    background-color: var(--color);
+    width: 60%;
+    color: var(--text);
+    height: 100vh;
+}
+
+.wrapper {
+    margin: 10vh 0 10vh 0;
+}
+
+.intro {
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.75rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: -2rem;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.form-title {
+
+    width: 100%;
+
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 35%;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.create-account, .log-in {
+    display: flex;
+    padding-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+button {
+    border: 8px solid var(--text);
+    background-color: var(--text);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 8px 16px 8px;
+    color: rgb(68, 107, 141);
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 1200px){
+    .input {
+        width: 70%
+    }
+    .create-account, .log-in {
+        align-items: center;
+        justify-content: center;
+        padding-left:  0;
+    }
+}
